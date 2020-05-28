@@ -1,0 +1,13 @@
+@charset 'utf-8';
+
+@import "./fnc/onepxborder";
+@import "./fnc/setArrow";
+
+$G_font_color_default: #363636;
+$G_font_color_gray: #969696;
+
+$G_main_color: #108ee9;
+
+@function px($n:0) {
+    @return $n / 75+rem;
+}

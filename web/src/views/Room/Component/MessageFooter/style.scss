@@ -1,0 +1,44 @@
+@import '~@/sass/fn';
+
+$paddingX: 24;
+$navHeight: 80;
+$footerHeight: 64;
+
+.messageFooter {
+    box-sizing: content-box;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: px($footerHeight);
+    padding: px(14) px($paddingX);
+    display: flex;
+    background-color: #f8f8f8;
+
+    .input {
+        flex: 1;
+        border: 0;
+        height: px($footerHeight);
+        line-height: px($footerHeight);
+        border-radius: px(6);
+        margin-right: px(14);
+        padding: 0 px(10);
+    }
+
+    .btn {
+        width: px(100);
+        height: px($footerHeight);
+        line-height: px($footerHeight);
+        font-size: px(24);
+        border-radius: px(6);
+        background-color: $G_main_color;
+
+        &::before {
+            border: 0 !important;
+        }
+    }
+
+    &:after {
+        @include borderTop(#f1f1f1, 2);
+    }
+}

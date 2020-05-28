@@ -1,0 +1,100 @@
+@import '~@/sass/fn';
+
+:global {
+  body {
+    width: 100%;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-size: px(28) !important;
+  }
+
+  #root {
+    margin: 0 auto;
+    overflow-x: hidden;
+    color: $G_font_color_default;
+    line-height: 1.4;
+    max-width: 550px;
+    min-height: 100vh;
+  }
+
+  * {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  *:not(input, textarea) {
+    user-select: none;
+  }
+
+  button {
+    border: none;
+    font-size: inherit;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+  }
+
+  body * {
+    box-sizing: inherit;
+  }
+
+  ul,
+  li {
+    list-style: none;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .clearfix:after {
+    clear: both;
+    content: '.';
+    display: block;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+  }
+
+  *,
+  :after,
+  :before {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  input[type='tel'],
+  input[type='text'],
+  input[type='password'],
+  textarea {
+    -webkit-appearance: none;
+    border-radius: 0;
+  }
+
+  .freeLine {
+    word-break: break-all;
+  }
+
+  .canSelect {
+    user-select: text;
+  }
+}

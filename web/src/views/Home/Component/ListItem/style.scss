@@ -1,0 +1,59 @@
+@import '~@/sass/fn';
+
+$contentHeight: 90;
+$paddingY: 24;
+
+.box {
+    display: flex;
+    align-items: center;
+    width: px(750);
+    height: px($contentHeight + $paddingY * 2);
+}
+
+.avatar {
+    width: px($contentHeight);
+    height: px($contentHeight);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: px(24);
+    border-radius: px(8);
+}
+
+.content,
+.status {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    padding: px($paddingY) 0;
+
+    &:after {
+        @include borderBottom(#f1f1f1, 2);
+    }
+}
+
+.content {
+    flex: 1;
+    min-width: 0;
+    margin-left: px(24);
+    font-size: px(22);
+    color: $G_font_color_gray;
+    .nickName {
+        font-size: px(30);
+        color: #000000;
+    }
+}
+
+.status {
+    padding-right: px(24);
+    font-size: px(24);
+    color: $G_font_color_gray;
+}
+
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }

@@ -1,0 +1,29 @@
+@import '~@/sass/fn';
+
+$paddingX: 24;
+$navHeight: 80;
+$footerHeight: 64;
+
+.box {
+    background-color: #fff;
+    min-height: 100vh;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: px($navHeight);
+    padding: 0 px($paddingX);
+    line-height: px($navHeight);
+    background-color: #ffffff;
+
+    &:after {
+        @include borderBottom(#f1f1f1, 2);
+    }
+}
+
+.body {
+    padding: px($navHeight) px($paddingX) px(120) px($paddingX);
+}
